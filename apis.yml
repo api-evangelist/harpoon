@@ -1,7 +1,28 @@
 aid: harpoon
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/harpoon.png
 name: Harpoon
-description: Harpoon is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Harpoon is a no-code Kubernetes deployment platform that lets teams deploy
+  commercial or open-source software to Kubernetes clusters in seconds using a
+  drag-and-drop interface, without writing code or configuration scripts. It
+  automates cloud account security, cluster provisioning and autoscaling across
+  AWS, Azure, Google Cloud and VMware, and integrates with CI/CD tooling such as
+  GitHub, GitLab, Jenkins, Argo, Docker Hub and Harbor. The product is delivered
+  as a hosted web application (app.harpooncorp.com) aimed at both startups and
+  enterprises; it is surfaced here as an a16z portfolio lead. As of this
+  enrichment pass Harpoon publishes no public REST API, OpenAPI specification,
+  SDK, CLI or webhook surface.
 url: https://raw.githubusercontent.com/api-evangelist/harpoon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Kubernetes
+- Deployment
+- DevOps
+- Cloud
+- No-Code
+- Containers
+- Platform Engineering
 apis: []
+common:
+- type: DomainSecurity
+  url: security/harpoon-domain-security.yml
+- type: Website
+  url: https://harpoon.io/
+- type: Documentation
+  url: https://docs.harpoon.io/en/latest/
+- type: Pricing
+  url: https://harpoon.io/pricing/
+- type: SignUp
+  url: https://app.harpooncorp.com/register
+- type: Login
+  url: https://app.harpooncorp.com/
+- type: TermsOfService
+  url: https://harpoon.io/terms
+- type: PrivacyPolicy
+  url: https://harpoon.io/privacy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
